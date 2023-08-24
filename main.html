@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <title>My Playlist</title>
+  <style>
+    body {
+      background-color: rgb(204, 204, 204);
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration-line: none;
+      /* target: _blank; */
+    }
+    .player_one, .player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .player_one {
+  text-align: center;
+  width: 400px;
+  height: 300px;
+		margin-left: 20%
+}
+	  .player_two{
+			margin-left: 30%
+/* 		  border-radius: 5px; */
+	  }
 
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>My Playlist</h1>
+	
+  <ul>
+    <li><a href="song1.mp3">Song 1</a></li>
+    <li><a href="song2.mp3">Song 2</a></li>
+    <li><a href="song3.mp3">Song 3</a></li>
+    <li><a href="song4.mp3">Song 4</a></li>
+    <li><a href="song5.mp3">Song 5</a></li>
+  </ul>
+	<h2>Now Playing...</h2>
+  <video class="player_one" controls>
+    <source src="https://youtu.be/XmA0huo5rqw?si=MOLXAKU8u0zDMr2i" type="audio/mp3">
+  </video>
+	  <h2>MP3 songs</h2>
+	<audio class="player_two" src="song.mp3" type="audio/mp3" controls></audio>
+  
 
 </body>
-
 </html>
